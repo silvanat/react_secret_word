@@ -53,12 +53,10 @@ function App() {
 
     //pick word and pick category
     const { word, category } = pickWordAndCategory();
-    console.log(word, category);
 
     //create an array of letters
     let wordLetters = word.split("");
     wordLetters = wordLetters.map((l) => l.toLowerCase());
-    console.log(wordLetters);
 
     //fill states
     setPickedWord(word);
@@ -70,7 +68,6 @@ function App() {
 
   // process the letter input
   const verifyLetter = (letter) => {
-    console.log("verifyLetter ", letter);
     const normalizedLetter = letter.toLowerCase();
 
     //check if letter has already been utilized
@@ -114,7 +111,6 @@ function App() {
   //check win condition
   useEffect(() => {
     const uniqueLetters = [...new Set(letters)]; //remove letras repetidas no array
-    console.log(uniqueLetters);
 
     //win condition
     if (
