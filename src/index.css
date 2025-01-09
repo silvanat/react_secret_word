@@ -1,0 +1,40 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Helvetica, sans-serif;
+  background: linear-gradient(
+    180deg,
+    rgb(118, 135, 125) 0%,
+    rgba(150, 149, 138, 1) 100%
+  );
+  color: #fff;
+}
+
+#root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+button {
+  background: #88b8a9;
+  color: #2e2e2c;
+  padding: 20px 45px;
+  border: 2px solid #96958a;
+  border-radius: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.2em;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+button:hover {
+  background: #b2cbae;
+}
